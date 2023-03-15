@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+//dizinin enkucuk elemanini bulan program
 
 int enkucukBul(int dizi[],int eleman,int dizi_uzunlugu)
 {
@@ -54,7 +54,7 @@ for(k=0; k <dizi_uzunlugu ; k++)//for dongusuyle eleman sayisi kadar veri alinir
 //bulunan eleman yazdirilir
 int  Sonuc= enkucukBul(dizi,eleman,dizi_uzunlugu);
 
-	printf("\nGirilen dizinin en kücük elemani:%d ", Sonuc);
+	printf("\nGirilen dizinin en kÃ¼cÃ¼k elemani:%d ", Sonuc);
 
 
 return 0;
