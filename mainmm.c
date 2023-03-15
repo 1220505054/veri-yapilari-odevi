@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int enkucukBul(int dizi[],int eleman,int dizi_uzunlugu)
+{
+
+	int k;   // 1 defa calisir
+
+    int	minimum = dizi[0];  // 1 defa calisir
+
+	for(k=0;k<dizi_uzunlugu;k++){  // i 1 defa calisir , dizi uzunlugu n+1 defa calisir , i++ n defa calisir
+
+		if(dizi[k]<minimum){   // n defa calisir
+
+			minimum=dizi[k]; // n defa calisir
+		}
+
+
+	}
+
+
+	return minimum;   // 1 defa calisir
+}
+
+// T(n)=4n+4 genel formuluyle hesaplanir
+
+
+//islem bolumu
+int main(){
+
+int dizi_uzunlugu;
+
+int k;
+
+int eleman;
+//kullanicidan dizinin eleman sayisi alinir
+printf("\nOlusturmak istediginiz dizinin uzunlugunu giriniz:\n");
+
+scanf("%d",&dizi_uzunlugu);
+
+int dizi[dizi_uzunlugu];
+
+for(k=0; k <dizi_uzunlugu ; k++)//for dongusuyle eleman sayisi kadar veri alinir
+{
+
+	printf("\nOlusturmak istediginiz dizinin elemanlarini giriniz:");
+	scanf("%d",&dizi[k]);
+
+
+
+}
+
+//bulunan eleman yazdirilir
+int  Sonuc= enkucukBul(dizi,eleman,dizi_uzunlugu);
+
+	printf("\nGirilen dizinin en kücük elemani:%d ", Sonuc);
+
+
+return 0;
+
+}
